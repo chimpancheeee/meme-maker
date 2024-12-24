@@ -1,0 +1,57 @@
+@import  "css/reset.css";
+
+canvas {
+    margin-top: 20px;
+    border: 5px solid black;
+    width: 800px;
+    height: 800px;
+    border-radius: 10px;
+    background-color: white;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.color-option {
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    cursor: pointer;
+    border: 5px solid blueviolet;
+    transition: transfrom ease-in-out 1s;
+    border-radius: 50%;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 5px;
+}
+label {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
+input#file {
+    display: none;
+}
+input#text-place {
+    all :unset;
+    padding: 10px 0px;
+    border-radius: 10px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0,0,0, 0.8);
+}
+#erase-btn, #mode-btn, #destroy-btn, #save, #font-style {
+    border-radius: 10px;
+    background-color: blueviolet;
+    text-align: center;
+}
+

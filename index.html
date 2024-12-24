@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Meme Maker</title>
+  </head>
+  <body>
+    <input type="color" id="color-btn" />
+    <div>
+      <div
+        class="color-option"
+        style="background-color: #2ecc71"
+        data-color="#2ecc71"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #1abc9c"
+        data-color="#1abc9c"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #f1c40f"
+        data-color="#f1c40f"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #3498db"
+        data-color="#3498db"
+      ></div>
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+      <input
+        type="range"
+        id="lineWidth-btn"
+        min="1"
+        max="10"
+        value="5"
+        step="0.5"
+      />
+      <button id="erase-btn">Erase</button>
+      <button id="mode-btn">Fill</button>
+      <button id="destroy-btn">Destroy</button>
+      <select id="font-style">
+        <option value="sans-serif">sans-serif</option>
+        <option value="cursive">cursive</option>
+        <option value="serif">serif</option>
+        <option value="system-ui">system-ui</option>
+      </select>
+      <input
+        type="range"
+        id="font-size"
+        min="20"
+        max="100"
+        value="60"
+        step="10"
+      />
+      <input type="text" id="text-place" placeholder="Write what you want" />
+      <label
+        >Add photo
+        <input type="file" id="file" accept="image/*" />
+      </label>
+      <button id="save">Save image</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
